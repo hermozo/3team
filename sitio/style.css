@@ -610,12 +610,13 @@ li.social-links a {
 }
 
 .first-section .lead {
-    font-size: 21px;
+    font-size: 30px;
     font-weight: 300;
     padding: 0 0 40px;
     margin: 0;
     line-height: inherit;
-    color: #2d3032;
+    color: #FFF;
+	text-shadow: 2px 2px 2px #000;
 }
 
 .macbookright {
