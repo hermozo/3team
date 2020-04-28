@@ -33,7 +33,7 @@
 
 @import url(css/animate.css);
 @import url(css/animate.min.css);
-@import url(css/pr_loading.css);
+/*@import url(css/pr_loading.css);*/
 @import url(css/bootstrap-touch-slider.css);
 @import url(css/flaticon.css);
 @import url(css/prettyPhoto.css);
@@ -45,7 +45,7 @@
 -------------------------------------------------------------------*/
 
 body {
-    color: #999;
+    color: #484848;
     font-size: 15px;
     font-family: 'PT Sans', sans-serif;
     line-height: 1.80857;
@@ -187,7 +187,20 @@ blockquote {
     padding: 30px;
 }
 
+body.host_version .big-tagline img {
+    margin-bottom: 20px;
+    max-width: 186px;
+}
 
+body.host_version .dev-list .widget-title {
+    padding: 20px 0 10px;
+    margin: 0;
+    line-height: 1 !important;
+}
+
+.customwidget{
+	color: #fff;
+}
 /*------------------------------------------------------------------
     WP CORE
 -------------------------------------------------------------------*/
@@ -343,7 +356,7 @@ a img.aligncenter {
 }
 
 .header_style_01 {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 1);
 	box-shadow: 0 0 8px 0 rgba(0,0,0,.12);
     display: block;
     left: 0;
@@ -371,12 +384,15 @@ a img.aligncenter {
 .header_style_01 .navbar-brand {
     padding: 2px 15px 0 15px;
 }
+.header_style_01 .navbar-brand img{
+    width: 180px; margin-top:-10px;
+}
 
 .header_style_01 .navbar-default .navbar-nav > li > a {
-    color: #ffffff;
+    color: #006eab;
     font-size: 15px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: capitalize;
     background-color: transparent;
 }
@@ -387,11 +403,11 @@ a img.aligncenter {
 
 body.host_version .header_style_01 .navbar-default .navbar-nav > li:hover a,
 body.host_version .header_style_01 .navbar-default .navbar-nav > li:focus a {
-	color: #00aeef;
+	color: #e7951c;
 }
 
 body.host_version  .header_style_01 .navbar-default .navbar-nav > li a.active{
-	color: #00aeef;
+	color: #e7951c;
 }
 
 .header_style_01 .navbar-right > li {
@@ -606,7 +622,8 @@ li.social-links a {
 }
 
 .first-section h2 strong{
-	color: #00aeef;
+	color: #006eab;
+	text-shadow:1px 1px 2px #fff;
 }
 
 .first-section .lead {
@@ -633,7 +650,7 @@ li.social-links a {
 }
 
 .section-title p {
-    color: #999;
+    color: #484848;
     font-weight: 400;
     font-size: 18px;
     line-height: 33px;
@@ -1098,10 +1115,10 @@ li.social-links a {
 }
 
 .effect-1:after {
-    top: -7px;
-    left: -7px;
-    padding: 7px;
-    box-shadow: 0 0 0 2px #2750ff;
+    top: -0px;
+    left: -0px;
+    padding: 0px;
+    box-shadow: 0 0 0 2px #ccc;
     -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
     -webkit-transform: scale(.8);
     -moz-transition: -moz-transform 0.2s, opacity 0.2s;
@@ -1912,7 +1929,7 @@ select.mobile-device {
 }
 
 .footer {
-    padding: 90px 0 80px !important;
+    padding: 40px 0 30px !important;
     color: #999;
     background-color: #1f1f1f;
 }
@@ -2220,7 +2237,7 @@ select.mobile-device {
     font-size: 18px;
     border: 2px solid #ffffff !important;
     color: #ffffff;
-    background-color: transparent;
+    background-color: #006eab;
 }
 
 .btn-dark {
@@ -2560,36 +2577,3 @@ span.m_1 {
 .map-box{
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
