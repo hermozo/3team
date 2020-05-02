@@ -32,7 +32,7 @@
 -------------------------------------------------------------------*/
 
 @import url(css/animate.css);
-@import url(css/animate.min.css);
+/*@import url(css/animate.min.css);*/
 /*@import url(css/pr_loading.css);*/
 @import url(css/bootstrap-touch-slider.css);
 @import url(css/flaticon.css);
@@ -46,8 +46,8 @@
 
 body {
     color: #484848;
-    font-size: 15px;
-    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    /*font-family: 'PT Sans', sans-serif;*/
     line-height: 1.80857;
 }
 
@@ -196,6 +196,31 @@ body.host_version .dev-list .widget-title {
     padding: 20px 0 10px;
     margin: 0;
     line-height: 1 !important;
+}
+
+.dev-list .widget{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    padding-bottom: 15px;
+}
+.dev-list .widget:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+.dev-list .widget img{
+    border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 15px;
+    -webkit-border-radius: 15px 15px 0 0;
+}
+.dev-list .widget p{
+    padding: 7px;
+}
+.dev-list .widget hr{
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .customwidget{
@@ -553,7 +578,7 @@ li.social-links a {
     display: block;
     position: relative;
     overflow: hidden;
-    padding: 120px 0;
+    padding: 40px 0;
 }
 
 .noover {
@@ -646,7 +671,7 @@ li.social-links a {
 .section-title {
     display: block;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .section-title p {
@@ -2187,7 +2212,7 @@ select.mobile-device {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #00aeef;
+    background: #fff;
     z-index: 11000;
     position: fixed;
     display: block
