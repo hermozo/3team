@@ -222,7 +222,9 @@ body.host_version .dev-list .widget-title {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
+.customwidget h2{
+	color: #fff;
+}
 .customwidget{
 	color: #fff;
 }
@@ -574,11 +576,14 @@ li.social-links a {
     transition: all .4s ease-in-out;
 }
 
+.section-top {
+	padding-top: 150px !important;
+}
 .section {
     display: block;
     position: relative;
     overflow: hidden;
-    padding: 40px 0;
+    padding: 40px 0 40px 0;
 }
 
 .noover {
@@ -1230,6 +1235,10 @@ li.social-links a {
     font-style: italic;
     color: #999;
     padding-bottom: 0;
+}
+.message-box .video_yt{
+	width:100%;
+	min-height: 315px;
 }
 
 .post-media {
@@ -2031,8 +2040,8 @@ select.mobile-device {
     background-color: #1f1f1f;
     box-sizing: border-box;
     width: 100%;
-    text-align: left;
-    padding: 50px 60px;
+    text-align: center;
+    padding: 0px 5px;
     overflow: hidden;
 }
 
@@ -2058,9 +2067,9 @@ select.mobile-device {
 
 .footer-distributed .footer-company-name {
     font-weight: 300;
-    margin: 0 10px;
+    margin: 0 3px;
     color: #666;
-    padding: 19px 0px;
+    padding: 8px 0px;
 }
 
 
@@ -2153,15 +2162,15 @@ select.mobile-device {
 }
 
 .dmtop {
-    background-color: #3C3D41;
+    background-color: #59c959;
     z-index: 100;
-    width: 50px;
-    height: 50px;
-    line-height: 47px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
     position: fixed;
-    bottom: -100px;
+    bottom: -50px;
     border-radius: 3px;
-    right: 50px;
+    right: 10px;
     text-align: center;
     font-size: 28px;
     color: #ffffff !important;

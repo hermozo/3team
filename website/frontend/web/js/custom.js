@@ -23,7 +23,7 @@
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > 1) {
             jQuery('.dmtop').css({
-                bottom: "75px"
+                bottom: "40px"
             });
         } else {
             jQuery('.dmtop').css({

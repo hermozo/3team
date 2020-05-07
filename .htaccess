@@ -1,0 +1,19 @@
+# prevent directory listing
+Options -Indexes
+IndexIgnore */*
+
+# follow symbolic links
+Options FollowSymlinks
+RewriteEngine on
+# without trailing slash
+#RewriteRule ^admin(/.+)?$ backend/web/$1 [L,PT]
+# with trailing slash
+RewriteRule ^admin(.+)?$ website/backend/web/$1 [L,PT]
+RewriteRule ^api/(.+)?$ website/api/web/$1 [L,PT]
+RewriteRule ^webapp(.*)?$ website/frontend/web/$1 [L,PT]
+
+#RewriteEngine on
+#RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (?!web\/) index.php/$1

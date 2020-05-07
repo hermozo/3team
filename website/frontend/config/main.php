@@ -12,20 +12,29 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
 	'language'=>'es',
-	'homeUrl' => '/3team/website',
+	'homeUrl' => '',
     'components' => [
-		
 		'assetManager' => [  
 			'bundles' => [
 				//'yii\web\Jquery'=> ['js'=>[]],
 				'yii\bootstrap\BootstrapPluginAsset' => ['js'=>[]],
 				'yii\bootstrap\BootstrapAsset' => ['css' => []]
-			]
+			],
+			//'basePath' => __DIR__ . '/../web/assets',
+			'baseUrl' => '/webapp/assets',
+			'basePath' => '@frontend/web/assets',
+			//'basePath' => Yii::$app->media->baseUrl,
 		],
         'request' => [
             'csrfParam' => '_csrf-frontend',
-			'baseUrl' => '/3team/website',
+			'baseUrl' => '',
         ],
+		'media' => [
+			'class' => 'yii\web\UrlManager',
+			'baseUrl' => '/webapp',
+			'enablePrettyUrl' => true,
+            'showScriptName' => false,
+		],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,

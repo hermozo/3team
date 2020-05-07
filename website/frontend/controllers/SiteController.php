@@ -23,8 +23,8 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function behaviors()
-    {
+	public $description;
+    public function behaviors(){
         return [
             'access' => [
                 'class' => AccessControl::className(),
@@ -74,6 +74,10 @@ class SiteController extends Controller
      */
     public function actionIndex(){
         return $this->render('index');
+    }
+	
+    public function actionCursos(){
+        return $this->render('cursos');
     }
 
     /**
